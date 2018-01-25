@@ -3,7 +3,8 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path');
-
+// change the public path here
+const productPath = '/';
 module.exports = {
     dev: {
 
@@ -50,7 +51,7 @@ module.exports = {
         // Paths
         assetsRoot: path.resolve(__dirname, '../dist'),
         assetsSubDirectory: 'static',
-        assetsPublicPath: '/',
+        assetsPublicPath: productPath,
 
         /**
          * Source Maps
@@ -74,3 +75,6 @@ module.exports = {
         bundleAnalyzerReport: process.env.npm_config_report
     }
 };
+
+// todo
+module.exports.productPath = productPath;

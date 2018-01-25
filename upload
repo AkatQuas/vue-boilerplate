@@ -1,0 +1,40 @@
+#! /bin/sh
+
+folder="player"
+while :
+do
+if read -t 5 -n 1 -p "Upload to production server ? [Y/N]:" reply
+    then
+        case $reply in
+            Y|y)
+                echo '\nyes to production';
+#               target="/mnt/wwwroot/charge/public/"$folder
+#               me_server="root@47.96.5.85"
+                break
+                ;;
+            N|n)
+                echo '\nno to test server';
+#               target="/mnt/wwwroot/xmroomcard/public/"$folder
+#               me_server="root@47.96.1.161"
+                break
+                ;;
+            *)
+                echo '\nunknown input'
+                continue
+        esac
+else
+    echo '\n timeout'
+    break;
+fi
+done
+
+if [ $target != '' ] && [ $me_server != '' ] ; then
+    echo "target $target, server $me_server"
+    npm run build
+    mv dist $folder
+    ssh $me_server "rm -r $target"
+    scp -r $folder $me_server:$target
+    rm -r $folder
+else
+    echo 'fail to build and upload for not specify folder name and server ip'
+fi

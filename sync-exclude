@@ -1,0 +1,7 @@
+.git/
+.idea/
+sync*
+README*
+snippets
+.DS_Store
+.eslint

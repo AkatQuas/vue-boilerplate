@@ -1,11 +1,14 @@
+/*
+naming convention: OUTER NAMESPACE Use ALL CAPs, InnerKeys use CamelCase.
+*/
 export const GETTERS = {
-    TOKEN: 'token'
+    Token: '$token',
+    WXURL: 'wxurl'
 };
 export const MUTATIONS = {
-    SETTOKEN: 'setToken',
-    CLEARTOKEN: 'clearToken'
+    SetToken: 'setToken',
+    ClearToken: 'clearToken',
+    SETWXURLIOS: 'setWXUrlIOS'
 };
 
 export const ACTIONS = {};
-
-export const TOKEN = 'token';

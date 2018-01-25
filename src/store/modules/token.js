@@ -1,20 +1,20 @@
-import { GETTERS, MUTATIONS, TOKEN } from '../types';
+import { GETTERS, MUTATIONS } from '../types';
 
 export default {
     state: {
-        token: null
+        [GETTERS.Token]: null
     },
     getters: {
-        [GETTERS.TOKEN]: state => state.token
+        [GETTERS.Token]: state => state[GETTERS.Token]
     },
     mutations: {
-        [MUTATIONS.SETTOKEN]: (state, payload) => {
-            localStorage.setItem(TOKEN, payload);
-            state.token = payload;
+        [MUTATIONS.SetToken]: (state, payload) => {
+            localStorage.setItem(GETTERS.Token, payload);
+            state[GETTERS.Token] = payload;
         },
-        [MUTATIONS.CLEARTOKEN]: state => {
-            localStorage.removeItem(TOKEN);
-            state.token = null;
+        [MUTATIONS.ClearToken]: state => {
+            localStorage.removeItem(GETTERS.Token);
+            state[GETTERS.Token] = null;
         }
     }
 };

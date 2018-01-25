@@ -6,10 +6,22 @@ const routes = [
         name: 'Home',
         component: _import('home')
     },
+    (process.env.NODE_ENV === 'development' ? {
+        path: '/test',
+        name: 'Test',
+        component: _import('misc/test')
+    } : {
+        path: '/test',
+        redirect: { name: 'Page404' }
+    }),
+    {
+        path: '/page404',
+        name: 'Page404',
+        component: _import('misc/404')
+    },
     {
         path: '*',
-        name: 'Page404',
-        component: _import('error/404')
+        redirect: { name: 'Page404' }
     }
 ];
 

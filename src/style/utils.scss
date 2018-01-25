@@ -1,0 +1,8 @@
+$designWidth: 750;
+@function px2rem ( $px ) {
+    @return $px*750/$designWidth/20 + rem;
+}
+
+@function img2qn ($img) {
+    @return unquote(quote(url("http://p2dctyxhs.bkt.clouddn.com/" + $img + ".png")));
+}

@@ -1,12 +1,12 @@
 <template>
     <div id="app">
-        <transition mode="out-in" name="slide">
+        <transition mode="out-in" name="fade">
             <router-view></router-view>
         </transition>
     </div>
 </template>
 
-<style lang="scss" scoped="">
+<style lang="scss" scoped>
 
 </style>
 
@@ -18,34 +18,37 @@
 </script>
 
 <style lang="scss">
-    @import "style/normalize.css";
+    @import "style/mobile.css";
 
-    .slide-enter-active {
-        animation: slide-in .3s ease-out forwards;
+    /* @import "style/pc.css"; */
+
+    /* @import "style/iakit.css"; */
+
+    #app {
+        /*max-width: 540px;*/
+    }
+    .fade-enter-active {
+        animation: fade-in .3s ease-out forwards;
     }
 
-    .slide-leave-active {
-        animation: slide-out .3s ease-in forwards;
+    .fade-leave-active {
+        animation: fade-out .3s ease-in forwards;
     }
 
-    @keyframes slide-in {
+    @keyframes fade-in {
         from {
-            transform: translateY(-20px);
             opacity: 0;
         }
         to {
-            transform: translateY(0);
             opacity: 1;
         }
     }
 
-    @keyframes slide-out {
+    @keyframes fade-out {
         from {
-            transform: translateY(0);
             opacity: 1;
         }
         to {
-            transform: translateY(-20px);
             opacity: 0;
         }
     }
