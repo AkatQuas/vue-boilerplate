@@ -47,6 +47,8 @@ However, if you need to develop on Desktop browser, be careful using these files
 
 [`src/config/axios.js`](./src/config/axios.js) shows a lot of configuration on axios.
 
+Sometimes a proxfy config is required, check the [page](https://webpack.js.org/configuration/dev-server/#devserver-proxy) for the usage on how webpackDevServer use the proxy. And the place where you need to write the config is `config/index.js`, in `dev -> proxyTable` part to configure the usage from above page.
+
 ## On Vue-CLI
 
 When generating the project, choose `ESlint`, select whichever config you like.
