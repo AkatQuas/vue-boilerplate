@@ -1,4 +1,4 @@
-const _import = process.env.NODE_ENV === 'development' ? file => require('@/views/' + file + '.vue').default : file => () => import('@/views/' + file + '.vue');
+const _import = process.env.NODE_ENV === 'development' ? file => require('@/views/' + file).default : file => () => import('@/views/' + file);
 
 const routes = [
     {

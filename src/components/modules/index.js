@@ -1,5 +1,1 @@
-import HelloWorld from './HelloWorld';
-
-export {
-    HelloWorld
-}
+export { default as MyComponent } from './MyComponent';

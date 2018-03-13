@@ -4,7 +4,9 @@ A boilerplate on Vue^2.5.0, A short one with only the folder structures, config 
 
 ## How to use this boilerplate
 
-**./upload**: for uploading production folder to the on-line server!
+<details>
+
+<summary>**./upload**: for uploading production folder to the on-line server!</summary>
 
 ```bash
 # before using this shell script,
@@ -18,8 +20,11 @@ A boilerplate on Vue^2.5.0, A short one with only the folder structures, config 
 # choose whether uploading to test server or production server with 'n' or 'y'
 
 ```
+</details>
 
-**./syncf**: for `rsync` files with the project folder in the initial phase.
+<details>
+
+<summary>**./syncf**: for `rsync` files with the project folder in the initial phase.</summary>
 
 ```bash
 # vue-webpack-template don't provide much for development
@@ -29,9 +34,11 @@ A boilerplate on Vue^2.5.0, A short one with only the folder structures, config 
 
 # only one parameter, the project folder
 
+# usage
 ./syncf PROJECTFOLDER
 
 ```
+</details>
 
 ## On responsive design
 
@@ -45,7 +52,7 @@ However, if you need to develop on Desktop browser, be careful using these files
 
 ## On HTTP Request
 
-[`src/config/axios.js`](./src/config/axios.js) shows a lot of configuration on axios.
+[`src/config/axios.js`](src/http/axios.js) shows a lot of configuration on axios. I use a singleton to cut the cost.
 
 Sometimes a proxfy config is required, check the [page](https://webpack.js.org/configuration/dev-server/#devserver-proxy) for the usage on how webpackDevServer use the proxy. And the place where you need to write the config is `config/index.js`, in `dev -> proxyTable` part to configure the usage from above page.
 
@@ -63,7 +70,6 @@ Using --save
 - `vuex`
 
 Using --save-dev
-- `eslint-plugin-vue`
-- `node-sass`, `postcss-loader`, `sass-loader`, `scss-loader`
+- `node-sass`, `sass-loader`, `scss-loader`
 
 And other dependencies you want...

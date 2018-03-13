@@ -2,7 +2,7 @@ require('./utils/hotcss');
 import Vue from 'vue';
 import VueAxios from 'vue-axios';
 import App from './App.vue';
-import axios from './config/axios';
+import { _instance as axios } from './http';
 import mixin from './mixin';
 
 import router from './router';

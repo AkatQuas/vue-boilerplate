@@ -1,6 +1,4 @@
 (function (window, document) {
-
-    'use strict';
     let hotcss = {};
 
     (function () {
