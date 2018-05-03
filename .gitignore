@@ -79,6 +79,7 @@ tags
 # Project-level settings
 /.tgitconfig
 ### Node template
+package-lock.*
 # Logs
 logs
 *.log

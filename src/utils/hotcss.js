@@ -8,7 +8,7 @@
             maxWidth = 540,
             designWidth = 750;
 
-        dpr = dpr >= 3 ? 3 : ( dpr >= 2 ? 2 : 1 );
+        dpr = dpr >= 3 ? 3 : (dpr >= 2 ? 2 : 1);
 
         if (hotcssEl) {
             let hotcssCon = hotcssEl.getAttribute('content');
@@ -51,20 +51,32 @@
             document.head.appendChild(viewportEl);
         }
 
+        // adjust body font size
+        function setBodyFontSize () {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px';
+            }
+            else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize);
+            }
+        }
+
+        setBodyFontSize();
+
     })();
 
     hotcss.px2rem = function (px, designWidth) {
         if (!designWidth) {
             designWidth = parseInt(hotcss.designWidth, 10);
         }
-        return parseInt(px, 10) * 320 / designWidth / 20;
+        return parseInt(px, 10) * 7.5 / designWidth;
     };
 
     hotcss.rem2px = function (rem, designWidth) {
         if (!designWidth) {
             designWidth = parseInt(hotcss.designWidth, 10);
         }
-        return rem * 20 * designWidth / 320;
+        return rem * designWidth / 7.5;
     };
 
     hotcss.mresize = function () {
@@ -77,8 +89,7 @@
         if (!innerWidth) {
             return false;
         }
-
-        document.documentElement.style.fontSize = ( innerWidth * 20 / 320 ) + 'px';
+        document.documentElement.style.fontSize = (innerWidth / 7.5) + 'px';
 
         hotcss.callback && hotcss.callback();
 

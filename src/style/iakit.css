@@ -105,34 +105,34 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: .68rem;
-    border-radius: .225rem;
+    padding-top: .15rem;
+    border-radius: .12rem;
     background-color: #fff;
     transition: opacity .3s, -webkit-transform .3s, transform .3s
 }
 
 .iakit-alert-title {
     margin: 0;
-    font-size: .72rem;
+    font-size: .4rem;
     font-weight: 400;
     color: #000
 }
 
 .iakit-alert-content, .iakit-alert-title {
-    padding: 0 .72rem .665rem;
+    padding: 0 .16rem .15rem;
     line-height: 1.5;
     text-align: center
 }
 
 .iakit-alert-content {
-    font-size: .63rem;
+    font-size: .3rem;
     color: #757575
 }
 
 .iakit-alert-btn {
-    height: 1.8rem;
-    font-size: .72rem;
-    line-height: 1.8rem;
+    height: .64rem;
+    font-size: .3rem;
+    line-height: .64rem;
     text-align: center;
     color: #1d8ce0;
     background-color: transparent;
@@ -210,18 +210,18 @@
     top: 50%;
     left: 50%;
     z-index: 1002;
-    width: 1.8rem;
-    height: 1.8rem;
-    padding: .665rem;
-    border-radius: .27rem;
+    width: 1rem;
+    height: 1rem;
+    padding: .15rem;
+    border-radius: .12rem;
     background-color: rgba(0, 0, 0, .6);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
 
 .iakit-loading-spinner {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: .6rem;
+    height: .6rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 50%;
@@ -304,11 +304,11 @@
 
 .iakit-toast-main {
     display: inline-block;
-    padding: .54rem .665rem;
-    border-radius: .27rem;
+    padding: .24rem .3rem;
+    border-radius: .12rem;
     text-align: center;
     line-height: 1.5;
-    font-size: .61rem;
+    font-size: .3rem;
     color: #fff;
     background-color: rgba(0, 0, 0, .7);
     transition: opacity .3s, -webkit-transform .3s, transform .3s
@@ -362,8 +362,8 @@
 
 .iakit-actionsheet-title {
     margin: 0;
-    padding: .225rem .45rem;
-    font-size: .54rem;
+    padding: .1rem .2rem;
+    font-size: .3rem;
     text-align: center;
     line-height: 1.5;
     color: #999;
@@ -371,16 +371,16 @@
 }
 
 .iakit-actionsheet-btns {
-    max-height: 9.9rem;
+    max-height: 6.6rem;
     overflow: scroll;
     -webkit-overflow-scrolling: touch
 }
 
 .iakit-actionsheet-btn {
-    height: 1.46rem;
+    height: .8rem;
     text-align: center;
-    font-size: .48rem;
-    line-height: 1.46rem;
+    font-size: .36rem;
+    line-height: .8rem;
     color: #1d8ce0;
     background-color: #fff
 }
@@ -394,7 +394,7 @@
 }
 
 .iakit-actionsheet-cancel {
-    margin-top: .18rem
+    margin-top: .06rem
 }
 
 .iakit-actionsheet-destructive {
