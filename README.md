@@ -1,3 +1,7 @@
+# DEPRECATED
+
+[@vue/cli(3.x)](https://github.com/vuejs/vue-cli) is more powerful, a small boilerplate like this might as well be DEPRECATED.
+
 # vue-boilerplate-js
 
 A boilerplate on Vue^2.5.0, A short one with only the folder structures, config files and package dependencies.
