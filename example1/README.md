@@ -1,6 +1,6 @@
-# DEPRECATED
+# OBSOLETED
 
-[@vue/cli(3.x)](https://github.com/vuejs/vue-cli) is more powerful, a small boilerplate like this might as well be DEPRECATED.
+[@vue/cli(3.x)](https://github.com/vuejs/vue-cli) is more powerful, a small boilerplate like this might as well be OBSOLETED.
 
 # vue-boilerplate-js
 
@@ -24,6 +24,7 @@ A boilerplate on Vue^2.5.0, A short one with only the folder structures, config 
 # choose whether uploading to test server or production server with 'n' or 'y'
 
 ```
+
 </details>
 
 <details>
@@ -42,11 +43,12 @@ A boilerplate on Vue^2.5.0, A short one with only the folder structures, config 
 ./syncf PROJECTFOLDER
 
 ```
+
 </details>
 
 ## On responsive design
 
-On [使用Flexible实现手淘H5页面的终端适配](https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html), copying from [imochen hotcss](https://github.com/imochen/hotcss), makes it possible to using `rem` in the stylesheet.
+On [使用 Flexible 实现手淘 H5 页面的终端适配](https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html), copying from [imochen hotcss](https://github.com/imochen/hotcss), makes it possible to using `rem` in the stylesheet.
 
 And modified the `src/style/mobile.css`, replacing `px` with `rem`. A lot work is saved!
 
@@ -67,13 +69,16 @@ When generating the project, choose `ESlint`, select whichever config you like.
 ## Other NPM Packages you may want
 
 From vue-cli:
-- `vue-router`
+
+-   `vue-router`
 
 Using --save
-- `axios`, `vue-axios` for HTTP Request
-- `vuex`
+
+-   `axios`, `vue-axios` for HTTP Request
+-   `vuex`
 
 Using --save-dev
-- `node-sass`, `sass-loader`, `scss-loader`
+
+-   `node-sass`, `sass-loader`, `scss-loader`
 
 And other dependencies you want...
